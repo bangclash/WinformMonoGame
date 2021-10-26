@@ -53,7 +53,6 @@ namespace WinformMonoGame
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
             if (changeColor)
             {
                 backgroundColor = new Color(
@@ -70,7 +69,6 @@ namespace WinformMonoGame
         {
             GraphicsDevice.Clear(backgroundColor);
 
-            // TODO: Add your drawing code here
             spriteBatch.Begin();
 
             spriteBatch.Draw(texture, Vector2.Zero, Color.White);
